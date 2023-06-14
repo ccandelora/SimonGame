@@ -31,9 +31,6 @@ function nextSequence(){
     
     gamePattern.push(randomChosenColor);
     
-    //for (var i = 0; i < gamePattern.length; i++){
-    //    playTone(i);
-    //}
     $.each(gamePattern, function(i, value){
         setTimeout(function(){
             $("#" + value).fadeOut(100).fadeIn(100);
